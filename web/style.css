@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #0099ff;
+    --secondary-color: #0073c0;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;  /* Ukrywanie na początku */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#spawnMenu {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+button {
+    font-family: Poppins;
+    cursor: pointer;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    background: none;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+button:hover {
+    transition: .5s ease all;
+    color: white;
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+button:last-child {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    transition: .5 ease all;
+}
+
+button:hover:last-child {
+    background-color: var(--primary-color);
+}
