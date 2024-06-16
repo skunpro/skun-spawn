@@ -1,36 +1,36 @@
-# Skrypt FiveM (ESX): Wybranie Miejscu Spawnu!
+# FiveM Script (ESX): Choose Your Spawn Location!
 
-`skun-spawn` to skrypt dla FiveM, który pozwala graczom wybierać miejsce spawnu za pomocą menu NUI. Skrypt działa tak że administrator wpisuje `/spawn <playerId>` i w tym momencie gracz może wybrać gdzie się chce teleportować.
+`skun-spawn` is a script for FiveM that allows players to choose their spawn location using a NUI menu. The script works so that an administrator enters `/spawn <playerId>`, and at that moment, the player can choose where they want to teleport.
 
-## Wymagania
+## Requirements
 
 - es_extended
 
-## Instalacja
+## Installation
 
-1. **Pobierz skrypt:**
+1. **Download the script:**
 
-   Skopiuj lub pobierz repozytorium na swój serwer.
+   Copy or download the repository to your server.
 
-2. **Umieść pliki:**
+2. **Place the files:**
 
-   Umieść folder `skun-spawn` w katalogu `resources` na Twoim serwerze.
+   Place the `skun-spawn` folder in the `resources` directory on your server.
 
-3. **Dodaj do pliku `server.cfg`:**
+3. **Add to `server.cfg`:**
 
-   Dodaj `start skun-spawn` do swojego pliku `server.cfg`, aby skrypt został uruchomiony przy starcie serwera.
+   Add `start skun-spawn` to your `server.cfg` file to ensure the script starts with the server.
 
-4. **Konfiguracja:**
+4. **Configuration:**
 
-   Skonfiguruj skrypt edytując plik `config.lua` w folderze `skun-spawn`.
+   Configure the script by editing the `config.lua` file in the `skun-spawn` folder.
 
    ```lua
    Config = {}
 
    Config.Spawns = {
-       vector4(0, 0, 0, 0), -- Dodaj tutaj swój punkt spawnu numer jeden
-       vector4(0, 0, 0, 0), -- Dodaj tutaj swój punkt spawnu numer dwa
-       vector4(0, 0, 0, 0)  -- Dodaj tutaj swój punkt spawnu numer trzy
+       vector4(0, 0, 0, 0), -- Add your first spawn point here
+       vector4(0, 0, 0, 0), -- Add your second spawn point here
+       vector4(0, 0, 0, 0)  -- Add your third spawn point here
    }
 
    Config.AdminGroups = {
@@ -51,22 +51,27 @@
    }
    ```
 
-## Użycie
+## Usage
 
-- **Otwieranie menu spawnu:**
+- **Opening the spawn menu:**
 
-  Administrator może otworzyć menu spawnu dla gracza, używając komendy `/spawn <playerId>`. Komenda ta jest dostępna tylko dla graczy w grupach zdefiniowanych w `Config.AdminGroups`.
+  An administrator can open the spawn menu for a player using the command `/spawn <playerId>`. This command is only available to players in the groups defined in `Config.AdminGroups`.
 
   ```lua
   /spawn <playerId>
   ```
 
-- **Wybór miejsca spawnu:**
+- **Choosing a spawn location:**
 
-  Gracz może wybrać miejsce spawnu z menu NUI. Po wyborze miejsca, gracz zostanie przeteleportowany do wybranego punktu, a na ekranie pojawi się powiadomienie.
+  A player can choose a spawn location from the NUI menu. After selecting a location, the player will be teleported to the chosen point, and a notification will appear on the screen.
 
-## Pliki
+## Files
 
-- `config.lua`: Plik konfiguracji skryptu.
-- `client/skun-client.lua`: Skrypt klienta obsługujący NUI i teleportację gracza.
-- `server/skun-server.lua`: Skrypt serwera obsługujący komendy administracyjne.
+- `config.lua`: Configuration file for the script.
+- `client/skun-client.lua`: Client script handling NUI and player teleportation.
+- `server/skun-server.lua`: Server script handling administrative commands.
+
+## Author
+
+- Author: [notaskun](https://github.com/skunpro) - Back-End / [victoria](https://github.com/deryys) - Front-End
+- Contact: [Discord](https://discord.gg/404devs)
