@@ -1,6 +1,6 @@
-# skun-spawn
+# Skrypt FiveM (ESX): Wybranie Miejscu Spawnu!
 
-`skun-spawn` to skrypt dla FiveM, który pozwala graczom wybierać miejsce spawnu za pomocą menu NUI. Skrypt zawiera również powiadomienia ESX, aby informować graczy o wyborze miejsca spawnu.
+`skun-spawn` to skrypt dla FiveM, który pozwala graczom wybierać miejsce spawnu za pomocą menu NUI. Skrypt działa tak że administrator wpisuje `/spawn <playerId>` i w tym momencie gracz może wybrać gdzie się chce teleportować.
 
 ## Wymagania
 
